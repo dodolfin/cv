@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+
+
+\documentclass[a4,12pt]{article}
+
+\usepackage{cmap}
+%\usepackage[english,russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage[super]{nth}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingWithoutBottomLine}[2] {
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Денис Шабанов} \\ \vspace{1pt}
+    Санкт-Петербург \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 
+    +7 (906) 126-88-19 ~
+    \href{
+    mailto:shadenis2015@gmail.com
+    }{\raisebox{-0.2\height}\faEnvelope\  \underline{
+    shadenis2015@gmail.com
+    }} ~ 
+    % \href{https://t.me/mmel0n}{\raisebox{-0.2\height}\faTelegramPlane\ \underline{@mmel0n}}  ~
+    \href{https://github.com/dodolfin}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/dodolfin}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Санкт-Петербургский государственный университет}{2021 — [2025]}
+      {Факультет Математики и компьютерных наук, программа Современное программирование}{1 курс}
+  \resumeSubHeadingListEnd
+  
+  %
+%-----------PROGRAMMING SKILLS-----------
+\section{Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Языки программирования}{: C++, Kotlin, Java, Python} \\
+     \textbf{Инструменты разработки}{: IntelliJ IDEA, Git, Vim } \\
+     \textbf{Технологии}{: Linux} \\
+     \textbf{Навыки}{: Алгоритмы и структуры данных}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {„Sirius“ Educational Centre}{December 2019}
+%       {}{Sochi, Russia}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Проекты}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\href{https://github.com/dodolfin/spbu-viz}{\textbf{Visualization Tool}} $|$ \emph{Kotlin, Apache Batik, Clikt}}{Октябрь 2021}
+          \resumeItemListStart
+            \resumeItem{Утилита, которая генерирует SVG-графики (столбчатая, круговая диаграмма, график), используя данные из внешних CSV-файлов.  }
+            \resumeItem{Я использовал библиотеку Apache Batik, чтобы работать с SVG-изображениями как с экземплярами java.awt.Graphics.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+        \resumeProjectHeading
+          {\href{https://github.com/dodolfin/spbu-kvdb}{\textbf{Key-Word Database}} $|$ \emph{Kotlin, kotlinx-serialization, Clikt}}{Октябрь 2021}
+          \resumeItemListStart
+            \resumeItem{СУБД для работы с key-word базой данных, вдохновлённая утилитой dbm.}
+            \resumeItem{Использовал kotlinx-serialization для работы с JSON-файлами.}
+            \resumeItem{Для обработки аргументов командной строки использовал Clikt.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+
+      \resumeProjectHeading
+          {\href{https://github.com/dodolfin/spbu-diff}{\textbf{Diff Tool}} $|$ \emph{Kotlin}}{Сентябрь 2021}
+          \resumeItemListStart
+            \resumeItem{Упрощённый клон утилиты diff для сравнения файлов.}
+            \resumeItem{Использует наивный алгоритм поиска наибольшей общей подпоследовательности, работающий за $\mathcal{O}(n^2)$.}
+            \resumeItem{Умеет выводить разницу (patch) в «нормальном» формате (как в Linux) и «unified» формате (как на GitHub).}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+        \resumeProjectHeading
+          {\href{https://github.com/dodolfin/c-cpp-homework}{\textbf{C, C++ Homework}} $|$ \emph{C, C++}}{С ноября 2021}
+          \resumeItemListStart
+            \resumeItem{К сожалению, по правилам курса нельзя выкладывать решения домашних заданий в общий доступ. Могу добавить в коллабораторы по e-mail. \href{https://drive.google.com/file/d/19iJznAjlYrsriRs41jpmiLJJO5Dgt5aw/view?usp=sharing}{\underline{.zip файл с репозиторием} } }
+            \resumeItem{Работы на C: Makefile, реализация функций из cstring, реализация сортировки слиянием, интрузивного списка. Работы на C++: реализация vector, shared\_ptr.}
+            \resumeItem{Самая большая работа на C — утилита, работающая с BMP-файлом в определённом формате, которая вырезает и поворачивает на 90° прямоугольный кусок изображения.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+
+
+%-----------ACHIEVEMENTS---------------
+\section{Достижения}
+    \resumeSubHeadingListStart
+        \resumeSubheadingWithoutBottomLine{Участие в олимпиадах по программированию}{2019 -- Весна 2021}
+            \resumeItemListStart
+%                \resumeItem{Majority of Russian “ICT” contests are actually programming contests with algorithmic problems (e.g., Codeforces problems)}
+                \resumeItem{\textbf{\href{https://neerc.ifmo.ru/school/ioip/standings-2021.html}{Индивидуальная олимпиада школьников по информатике и программированию (ИОИП) (2021)}}: 43 место из 378 участников, диплом II степени }
+                \resumeItem{\textbf{\href{https://sesc.nsu.ru/upload/iblock/eb6/2019_3_inf_r.pdf}{Всесибирская олимпиада школьников по информатике (2020)}}: 77 место из 540 участников, диплом III степени }
+                \resumeItem{\textbf{\href{http://web.archive.org/web/20200929173737/https://olympiada.spbu.ru/wp-content/uploads/info_zakl.pdf}{Олимпиада СПбГУ по информатике (2020)}}: 17 место из более чем 300 участников, диплом I степени}
+                \resumeItem{}{\textbf{\href{https://olymp.msu.ru/rus/event/6408/page/2320}{Олимпиада «Ломоносов» по информатике (2021)}}: 26 место из 43 участников, диплом II степени}                
+
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
+
