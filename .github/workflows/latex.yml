@@ -11,14 +11,13 @@ jobs:
         with:
           root_file: |
               cv.tex
-              cv_russian.tex
       - name: Configure git
         run: |
             git config --global user.email "shadenis2015@gmail.com"
             git config --global user.name "Denis Shabanov"
       - name: Push LaTeX documents
         run: |
-            git add cv.pdf cv_russian.pdf
+            git add cv.pdf
             git commit -m "Update PDFs"
             git push
 
